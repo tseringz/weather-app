@@ -26,8 +26,8 @@ body {
 
 .weather-container {
   position: relative;
-  width: 782px;
-  height: 600px;
+  max-width: 782px;
+  height: auto;
   font-size: 1em;
   overflow: hidden;
 }
@@ -46,7 +46,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
   div {
     display: flex;
@@ -63,19 +63,19 @@ input {
   border-left: none;
   border-right: none;
   font-size: 1.2rem;
-  width: 570px;
+  width: 25em;
   height: 32px;
   color: white;
   padding: 8px 8px 8px 8px;
   background-image: url(../assets/search-icon-white.svg);
-    background-size: 0.8em 0.8em;
-    background-repeat: no-repeat;
-    background-position-x: 24px;
-    background-position-y: 2px;
-    margin-top: 32px;
+  background-size: 0.8em 0.8em;
+  background-repeat: no-repeat;
+  background-position-x: 24px;
+  background-position-y: 2px;
+  margin-top: 32px;
 }
 
-input:focus {
+input:focus-visible {
 outline: none;
 box-sizing: border-box;
 background-color: transparent;
@@ -84,7 +84,7 @@ margin-top: 24px;
 height: 40px;
 color: white;
 font-size: 1.2rem;
-padding: 8px 8px 8px 24px;
+padding: 8px 8px 8px 8px;
 background-image: none;
 border-top: none;
 border-left: none;
@@ -159,75 +159,29 @@ img {
 
   .weather-container {
     position: relative;
-    width: 420px;
-    height: 600px;
+    max-width: 400px;
+    height: auto;
     font-size: 1em;
     overflow: hidden;
   }
-  
-  .circle {
-    position: absolute;
-    margin-top: -100%;
-    width: 400px;
-    height: 400px;
-    background-color: $secondary-color;
-  }
-  
-  .search-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-  
-    div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+.search-wrapper {
+  margin-bottom: 30px;
+}
+  input {
+    width: 90%;
   }
 
-  input {
-    background-color: transparent;
-    border-bottom: 1px $secondary-color solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    font-size: 1.2rem;
-    width: 320px;
-    height: 32px;
-    color: white;
-    padding: 8px 8px 8px 8px;
-    background-image: url(../assets/search-icon-white.svg);
-      background-size: 0.8em 0.8em;
-      background-repeat: no-repeat;
-      background-position-x: 24px;
-      background-position-y: 2px;
-      margin-top: 32px;
-  }
-  
   input:focus {
-  outline: none;
-  box-sizing: border-box;
-  background-color: transparent;
-  border-bottom: 1px $secondary-color solid;
-  margin-top: 24px;
-  height: 40px;
-  color: white;
-  width: 320px;
-  font-size: 1.2rem;
-  padding: 8px 8px 8px 8px;
-  background-image: none;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+    width: 90%;
   }
   
   h1 {
     font-size: 12.5em;
     font-weight: 600;
-    margin: 0;
+    margin: 0 0 0 0;
+  }
+
+  img {
+    width: 40px;
   }
 }

@@ -5,12 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-<script defer src="bundle8d1b17b455901dce4260.js"></script></head>
+<script defer src="bundle73773480cc7b55961650.js"></script></head>
 <body>
     <div class="container">
-        <h3>Don't Laugh Challenge</h3>
-        <div id="joke" class="joke"></div>
-        <button id="jokeBtn" class="btn">Get Another Joke</button>
+        <div id="weather-container" class="weather-container">
+            <div class="weather">
+            <div class="search-wrapper">
+                <form action="">
+                    <input type="text" name="search" id="search" autocomplete="off">
+                </form>
+                <div class="weather-status">
+                    <h6>Cloud raining</h6>
+                    <img src="../src/assets/icons8-stormy-night-100.png" alt=" weather icon" srcset="">
+                </div>
+            </div>
+            <div class="degree">
+                <h6>Mon, 21, Aug</h6>
+                <h1><span class="temperature">30</span>°<span>C</span></h1> 
+            </div>
+            <div class="place">
+                <h6>New York</h6>
+                <h2>NY</h2> 
+            </div>
+            <div class="weather-details">
+                <div>
+                    <h6>Feels like</h6>
+                    <h5><span>28</span>°<span>C</span></h5>
+                </div>
+                <div>
+                    <h6>Wind</h6>
+                    <h5><span>50</span>km/hr</h5>
+                </div>
+                <div>
+                    <h6>Humidity</h6>
+                    <h5><span>60</span>%</h5>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
