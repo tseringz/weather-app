@@ -9,7 +9,7 @@ const feelsLike = document.querySelector('.weather-details > div:nth-child(1) > 
 const humidity = document.querySelector('.weather-details > div:nth-child(3) > h5 > span');
 const windSpeed = document.querySelector('.weather-details > div:nth-child(2) > h5 > span');
 const weatherImg = document.querySelector('img');
-date.textContent = format(startOfToday(), 'PPP');
+date.textContent = format(startOfToday(), 'PPP'); // Get todays date using date-fns library
 
 let weatherUrl = (city) => `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=38a9b80676d2854b1f7e81bf63d6e1f6`;
 // get an input value 
@@ -25,7 +25,6 @@ async function getWeather(city) {
         humidity.textContent = result.main.humidity;
         windSpeed.textContent = meterToKilo(result.wind.speed);
         weatherImg.src = iconGenerator(result.weather[0].description);
-        console.log(result);
     } catch(error) {
         throw new Error("check your internet connection or enter a correct location");
     }
@@ -34,10 +33,6 @@ async function getWeather(city) {
     
     function kToC(K) {
         return Math.round(K - 273.15);
-    }
-
-    function kToF(K) {
-        return Math.round(K - 459.67);
     }
 
     function meterToKilo(K) {
