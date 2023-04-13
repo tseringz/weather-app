@@ -20,6 +20,5 @@ The weather app from The Odin Project [curriculum](https://www.theodinproject.co
 
 ## Link
 
-[Live Demo of the To Do List](https://tseringz.github.io/to-do-app/)
-<img width="911" alt="Screenshot 2023-04-13 at 11 08 13 AM" src="https://user-images.githubusercontent.com/15078245/231701328-004ce087-1719-4a06-8cf2-a2c9a4044a31.png">
-
+[Live Demo of the To Do List](https://tseringz.github.io/weather-app/)
+<img width="1025" alt="Screenshot 2023-04-13 at 2 04 12 PM" src="https://user-images.githubusercontent.com/15078245/231705268-5762b247-0dd0-4b0d-ac68-b5d83ff97fb1.png">
