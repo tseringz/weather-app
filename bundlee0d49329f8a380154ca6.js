@@ -35,7 +35,7 @@ var weatherImg = document.querySelector('img');
 date.textContent = (0,date_fns__WEBPACK_IMPORTED_MODULE_0__["default"])((0,date_fns__WEBPACK_IMPORTED_MODULE_1__["default"])(), 'PPP'); // Get todays date using date-fns library
 
 var weatherUrl = function weatherUrl(city) {
-  return "http://api.openweathermap.org/data/2.5/weather?q=".concat(city, "&APPID=38a9b80676d2854b1f7e81bf63d6e1f6");
+  return "https://api.openweathermap.org/data/2.5/weather?q=".concat(city, "&APPID=38a9b80676d2854b1f7e81bf63d6e1f6");
 }; // get an input value 
 
 
@@ -3869,4 +3869,4 @@ formSubmit.addEventListener('submit', function (e) {
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle7722900e69222ddc99ea.js.map
+//# sourceMappingURL=bundlee0d49329f8a380154ca6.js.map
