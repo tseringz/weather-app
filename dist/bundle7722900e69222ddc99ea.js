@@ -2,24 +2,6 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/generateJoke.js":
-/*!*****************************!*\
-  !*** ./src/generateJoke.js ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-function generateJoke() {
-  return "I don't trust stairs. They're always up to something.";
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generateJoke);
-
-/***/ }),
-
 /***/ "./src/weather.js":
 /*!************************!*\
   !*** ./src/weather.js ***!
@@ -50,7 +32,7 @@ var feelsLike = document.querySelector('.weather-details > div:nth-child(1) > h5
 var humidity = document.querySelector('.weather-details > div:nth-child(3) > h5 > span');
 var windSpeed = document.querySelector('.weather-details > div:nth-child(2) > h5 > span');
 var weatherImg = document.querySelector('img');
-date.textContent = (0,date_fns__WEBPACK_IMPORTED_MODULE_0__["default"])((0,date_fns__WEBPACK_IMPORTED_MODULE_1__["default"])(), 'PPP');
+date.textContent = (0,date_fns__WEBPACK_IMPORTED_MODULE_0__["default"])((0,date_fns__WEBPACK_IMPORTED_MODULE_1__["default"])(), 'PPP'); // Get todays date using date-fns library
 
 var weatherUrl = function weatherUrl(city) {
   return "http://api.openweathermap.org/data/2.5/weather?q=".concat(city, "&APPID=38a9b80676d2854b1f7e81bf63d6e1f6");
@@ -89,31 +71,26 @@ function _getWeather() {
             humidity.textContent = result.main.humidity;
             windSpeed.textContent = meterToKilo(result.wind.speed);
             weatherImg.src = iconGenerator(result.weather[0].description);
-            console.log(result);
-            _context.next = 21;
+            _context.next = 20;
             break;
 
-          case 18:
-            _context.prev = 18;
+          case 17:
+            _context.prev = 17;
             _context.t0 = _context["catch"](0);
             throw new Error("check your internet connection or enter a correct location");
 
-          case 21:
+          case 20:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[0, 18]]);
+    }, _callee, null, [[0, 17]]);
   }));
   return _getWeather.apply(this, arguments);
 }
 
 function kToC(K) {
   return Math.round(K - 273.15);
-}
-
-function kToF(K) {
-  return Math.round(K - 459.67);
 }
 
 function meterToKilo(K) {
@@ -3873,13 +3850,11 @@ var __webpack_exports__ = {};
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _generateJoke__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./generateJoke */ "./src/generateJoke.js");
-/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/main.scss */ "./src/styles/main.scss");
-/* harmony import */ var _weather__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./weather */ "./src/weather.js");
+/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ "./src/styles/main.scss");
+/* harmony import */ var _weather__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./weather */ "./src/weather.js");
 
 
-
-(0,_weather__WEBPACK_IMPORTED_MODULE_2__["default"])('paris');
+(0,_weather__WEBPACK_IMPORTED_MODULE_1__["default"])('New York');
 var formSubmit = document.querySelector('form');
 var weatherInput = document.querySelector('input');
 formSubmit.addEventListener('submit', function (e) {
@@ -3887,11 +3862,11 @@ formSubmit.addEventListener('submit', function (e) {
   var city = weatherInput.value;
 
   if (city) {
-    (0,_weather__WEBPACK_IMPORTED_MODULE_2__["default"])(city);
+    (0,_weather__WEBPACK_IMPORTED_MODULE_1__["default"])(city);
   }
 });
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle73773480cc7b55961650.js.map
+//# sourceMappingURL=bundle7722900e69222ddc99ea.js.map
