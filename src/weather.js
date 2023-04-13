@@ -11,7 +11,7 @@ const windSpeed = document.querySelector('.weather-details > div:nth-child(2) > 
 const weatherImg = document.querySelector('img');
 date.textContent = format(startOfToday(), 'PPP'); // Get todays date using date-fns library
 
-let weatherUrl = (city) => `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=38a9b80676d2854b1f7e81bf63d6e1f6`;
+let weatherUrl = (city) => `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=38a9b80676d2854b1f7e81bf63d6e1f6`;
 // get an input value 
 async function getWeather(city) {
     try {
